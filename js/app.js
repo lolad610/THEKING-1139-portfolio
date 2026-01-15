@@ -555,8 +555,18 @@ async function submitReview() {
         // Reload testimonials
         loadTestimonials();
     } catch (error) {
-        console.error('Error submitting review:', error);
-        showToast('Failed to submit review', 'error');
+        console.error('Error submitting review:', error.code, error.message);
+        
+        let message = 'Failed to submit review';
+        if (error.code === 'permission-denied') {
+            message = 'Permission denied. Check Firestore rules.';
+        } else if (error.code === 'unavailable') {
+            message = 'Firebase is temporarily unavailable. Try again.';
+        } else if (error.message.includes('Firestore')) {
+            message = 'Firestore not enabled. Enable it in Firebase Console.';
+        }
+        
+        showToast(message, 'error');
     }
 
     elements.submitReview.disabled = false;
