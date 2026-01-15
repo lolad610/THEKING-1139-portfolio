@@ -625,6 +625,25 @@ function initParallax() {
 initParallax();
 
 // ==========================================
+// PAYPAL DROPDOWN MENU
+// ==========================================
+function togglePayPalMenu() {
+    const menu = document.getElementById('paypalMenu');
+    if (menu) {
+        menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+    }
+}
+
+// Close PayPal menu when clicking outside
+document.addEventListener('click', (e) => {
+    const menu = document.getElementById('paypalMenu');
+    const paypalDropdown = document.querySelector('.paypal-dropdown');
+    if (menu && !paypalDropdown.contains(e.target)) {
+        menu.style.display = 'none';
+    }
+});
+
+// ==========================================
 // COPY TO CLIPBOARD (Utility)
 // ==========================================
 function copyToClipboard(text) {
