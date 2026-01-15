@@ -630,7 +630,7 @@ initParallax();
 function togglePayPalMenu() {
     const menu = document.getElementById('paypalMenu');
     if (menu) {
-        menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        menu.classList.toggle('active');
     }
 }
 
@@ -638,8 +638,8 @@ function togglePayPalMenu() {
 document.addEventListener('click', (e) => {
     const menu = document.getElementById('paypalMenu');
     const paypalDropdown = document.querySelector('.paypal-dropdown');
-    if (menu && !paypalDropdown.contains(e.target)) {
-        menu.style.display = 'none';
+    if (menu && paypalDropdown && !paypalDropdown.contains(e.target)) {
+        menu.classList.remove('active');
     }
 });
 

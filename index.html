@@ -736,30 +736,29 @@
                     </div>
                     <span class="contact-action">Send Email →</span>
                 </a>
-                
                 <!-- PayPal -->
                 <div class="contact-card paypal-dropdown" data-animate>
-                    <button onclick="togglePayPalMenu()" class="paypal-btn" style="border: none; background: none; cursor: pointer; width: 100%; text-align: left; display: flex; align-items: center; gap: 1.5rem;">
+                    <button onclick="togglePayPalMenu()" class="paypal-btn" style="border: none; background: none; cursor: pointer;">
                         <div class="contact-icon paypal">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797H9.048a.766.766 0 0 0-.757.645l-1.215 7.36zm13.787-14.78c-.116.598-.256 1.163-.425 1.694-1.297 4.088-4.563 5.478-8.123 5.478H9.93a.766.766 0 0 0-.757.645l-1.525 9.255a.641.641 0 0 0 .633.74h4.328a.766.766 0 0 0 .757-.644l.63-3.825a.766.766 0 0 1 .757-.645h1.588c3.76 0 6.705-1.528 7.57-5.946.36-1.847.174-3.389-.715-4.478a3.94 3.94 0 0 0-.758-.724z"/>
                             </svg>
                         </div>
                         <div class="contact-info">
-                            <h3>PayPal</h3>
-                            <p>Multiple Options</p>
+                            <h3 style="color: var(--text-primary);">PayPal</h3>
+                            <p style="color: var(--text-secondary);">Multiple Options</p>
                         </div>
                         <span class="contact-action">Select Option ↓</span>
                     </button>
                     
-                    <div class="paypal-menu" id="paypalMenu" style="display: none; position: absolute; top: 100%; right: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; z-index: 100; min-width: 220px; margin-top: 0.5rem; box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
-                        <button onclick="copyToClipboard('dhangarvenkatesh52@gmail.com'); togglePayPalMenu();" style="width: 100%; padding: 0.75rem 1rem; border: none; background: none; text-align: left; cursor: pointer; font-size: 0.9rem; color: var(--text-primary); border-bottom: 1px solid var(--border); transition: 0.2s;">
+                    <div class="paypal-menu" id="paypalMenu">
+                        <button onclick="copyToClipboard('dhangarvenkatesh52@gmail.com'); togglePayPalMenu();">
                             📋 Copy Email ID
                         </button>
-                        <a href="https://paypal.me/venkateshDhangar" target="_blank" rel="noopener" onclick="togglePayPalMenu();" style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: var(--text-primary); font-size: 0.9rem; border-bottom: 1px solid var(--border); transition: 0.2s;">
+                        <a href="https://paypal.me/venkateshDhangar" target="_blank" rel="noopener" onclick="togglePayPalMenu();">
                             👤 View Profile
                         </a>
-                        <a href="https://www.paypal.com/ncp/payment/NPKHV6APSU6NC" target="_blank" rel="noopener" onclick="togglePayPalMenu();" style="display: block; padding: 0.75rem 1rem; text-decoration: none; color: var(--text-primary); font-size: 0.9rem; transition: 0.2s;">
+                        <a href="https://www.paypal.com/ncp/payment/NPKHV6APSU6NC" target="_blank" rel="noopener" onclick="togglePayPalMenu();">
                             💰 Send Payment
                         </a>
                     </div>

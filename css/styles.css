@@ -1353,6 +1353,71 @@ nav.scrolled {
     color: var(--text-primary);
 }
 
+/* PayPal Dropdown */
+.paypal-dropdown {
+    position: relative;
+}
+
+.paypal-btn {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.paypal-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border-accent);
+    border-radius: var(--radius-md);
+    z-index: 100;
+    min-width: 220px;
+    margin-top: 0.75rem;
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all var(--transition-normal);
+    overflow: hidden;
+}
+
+.paypal-menu.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.paypal-menu button,
+.paypal-menu a {
+    display: block;
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    transition: all var(--transition-fast);
+}
+
+.paypal-menu button:last-child,
+.paypal-menu a:last-child {
+    border-bottom: none;
+}
+
+.paypal-menu button:hover,
+.paypal-menu a:hover {
+    background: var(--bg-tertiary);
+    color: var(--accent-light);
+    padding-left: 1.5rem;
+}
+
 /* ==========================================
    FOOTER
    ========================================== */
