@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEKING_1139 | Roblox UI Designer</title>
+    <meta name="description" content="Premium Roblox UI Design Services. Clean, modern, immersive interfaces that elevate your game.">
+    <meta name="keywords" content="Roblox UI, Roblox GUI, UI Designer, Game UI, THEKING_1139">
+    <meta name="author" content="THEKING_1139">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="THEKING_1139 | Roblox UI Designer">
+    <meta property="og:description" content="Premium Roblox UI Design Services">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon (add your own) -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ==================== LOADER ==================== -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <span>THEKING</span>
+        </div>
+    </div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">THEKING</a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <div class="user-info" id="userInfo">
+                    <img class="user-avatar" id="userAvatar" src="" alt="User">
+                    <span class="user-name" id="userName"></span>
+                    <button class="btn btn-sm btn-secondary" id="logoutBtn">Logout</button>
+                </div>
+                <button class="btn btn-primary" id="loginBtn">
+                    <svg viewBox="0 0 24 24" width="18" height="18">
+                        <path fill="currentColor" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                        <path fill="currentColor" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                        <path fill="currentColor" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                        <path fill="currentColor" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                    </svg>
+                    Sign In
+                </button>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-orb orb-1"></div>
+            <div class="hero-orb orb-2"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge" data-animate>
+                <span class="pulse-dot"></span>
+                Available for commissions
+            </div>
+            
+            <h1 class="hero-title" data-animate>
+                Premium <span class="gradient-text">UI Design</span><br>for Roblox Games
+            </h1>
+            
+            <p class="hero-subtitle" data-animate>
+                Elevating player experiences through clean, modern, and immersive interfaces. Every pixel crafted with purpose.
+            </p>
+            
+            <div class="hero-cta" data-animate>
+                <a href="#portfolio" class="btn btn-primary btn-lg">
+                    View My Work
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-lg">Get in Touch</a>
+            </div>
+            
+            <div class="hero-stats" data-animate>
+                <div class="stat">
+                    <span class="stat-value">50+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">Satisfaction</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">24h</span>
+                    <span class="stat-label">Avg Delivery</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label" data-animate>About Me</span>
+                    <h2 class="section-title" data-animate>
+                        Passionate About<br><span class="gradient-text">Creating Experiences</span>
+                    </h2>
+                    <p data-animate>
+                        I'm a Roblox UI designer focused on creating interfaces that players actually enjoy using. No cluttered menus. No confusing layouts. Just clean, intuitive design that enhances gameplay.
+                    </p>
+                    <p data-animate>
+                        Every project I take on gets my full attention. I don't do "good enough" — I aim for interfaces that make your game feel premium and polished.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight" data-animate>
+                            <span class="highlight-icon">🎯</span>
+                            <div>
+                                <strong>Pixel Perfect</strong>
+                                <span>Attention to every detail</span>
+                            </div>
+                        </div>
+                        <div class="highlight" data-animate>
+                            <span class="highlight-icon">⚡</span>
+                            <div>
+                                <strong>Fast Delivery</strong>
+                                <span>Usually within 24-48 hours</span>
+                            </div>
+                        </div>
+                        <div class="highlight" data-animate>
+                            <span class="highlight-icon">🔄</span>
+                            <div>
+                                <strong>Free Revisions</strong>
+                                <span>Until you're satisfied</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual" data-animate>
+                    <div class="about-card">
+                        <div class="about-card-inner">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                </div>
+                                <pre><code><span class="code-keyword">local</span> Designer = {
+    Name = <span class="code-string">"THEKING_1139"</span>,
+    Specialty = <span class="code-string">"UI/UX Design"</span>,
+    Available = <span class="code-bool">true</span>,
+    Quality = <span class="code-string">"Premium"</span>,
+    Response = <span class="code-string">"Fast"</span>
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO ==================== -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-animate>Portfolio</span>
+                <h2 class="section-title" data-animate>Recent Work</h2>
+                <p class="section-subtitle" data-animate>A selection of my UI designs for various Roblox games</p>
+            </div>
+            
+            <div class="portfolio-filter" data-animate>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="shop">Shops</button>
+                <button class="filter-btn" data-filter="hud">HUD</button>
+                <button class="filter-btn" data-filter="button">Buttons</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Card 1 -->
+                <div class="portfolio-card" data-category="button" data-animate>
+                    <div class="card-image">
+                        <img src="images/Ability Button.png" alt="Ability Button UI" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Ability Button</h3>
+                        <p>Button Design</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="portfolio-card" data-category="hud" data-animate>
+                    <div class="card-image">
+                        <img src="images/Awaken Bar.png" alt="Awaken Bar UI" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Awaken Bar</h3>
+                        <p>Progress Bar UI</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="portfolio-card" data-category="other" data-animate>
+                    <div class="card-image">
+                        <img src="images/Blue Lock Role Spin.png" alt="Blue Lock Role Spin" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Blue Lock Role Spin</h3>
+                        <p>Spin System UI</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="portfolio-card" data-category="button" data-animate>
+                    <div class="card-image">
+                        <img src="images/Cartoony Button.png" alt="Cartoony Button" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Cartoony Button</h3>
+                        <p>Button Design</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="portfolio-card" data-category="shop" data-animate>
+                    <div class="card-image">
+                        <img src="images/Cartoony Shop.png" alt="Cartoony Shop" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Cartoony Shop</h3>
+                        <p>Shop Interface</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="portfolio-card" data-category="other" data-animate>
+                    <div class="card-image">
+                        <img src="images/Custom Icons.png" alt="Custom Icons" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Custom Icons</h3>
+                        <p>Icon Pack</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 7 -->
+                <div class="portfolio-card" data-category="shop" data-animate>
+                    <div class="card-image">
+                        <img src="images/Horror Shop.png" alt="Horror Shop" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Horror Shop</h3>
+                        <p>Shop Interface</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 8 -->
+                <div class="portfolio-card" data-category="hud" data-animate>
+                    <div class="card-image">
+                        <img src="images/Log Currency.png" alt="Log Currency Display" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Log Currency</h3>
+                        <p>Currency Display</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 9 -->
+                <div class="portfolio-card" data-category="hud" data-animate>
+                    <div class="card-image">
+                        <img src="images/Naratu Bar.png" alt="Naratu Bar" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Naratu Bar</h3>
+                        <p>Progress Bar UI</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 10 -->
+                <div class="portfolio-card" data-category="hud" data-animate>
+                    <div class="card-image">
+                        <img src="images/Obby Hud.png" alt="Obby HUD" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Obby HUD</h3>
+                        <p>HUD Design</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 11 -->
+                <div class="portfolio-card" data-category="other" data-animate>
+                    <div class="card-image">
+                        <img src="images/Pet Simulator Inv.png" alt="Pet Simulator Inventory" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Pet Simulator Inventory</h3>
+                        <p>Inventory System</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 12 -->
+                <div class="portfolio-card" data-category="other" data-animate>
+                    <div class="card-image">
+                        <img src="images/Profile .png" alt="Profile UI" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Profile UI</h3>
+                        <p>Profile Interface</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 13 -->
+                <div class="portfolio-card" data-category="other" data-animate>
+                    <div class="card-image">
+                        <img src="images/UI2.png" alt="Game UI Design" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Game UI</h3>
+                        <p>Interface Design</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 14 -->
+                <div class="portfolio-card" data-category="other" data-animate>
+                    <div class="card-image">
+                        <img src="images/UI3.png" alt="Game UI Design" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Game UI</h3>
+                        <p>Interface Design</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+                
+                <!-- Card 15 -->
+                <div class="portfolio-card" data-category="other" data-animate>
+                    <div class="card-image">
+                        <img src="images/UI4.png" alt="Game UI Design" loading="lazy">
+                    </div>
+                    <div class="card-overlay">
+                        <h3>Game UI</h3>
+                        <p>Interface Design</p>
+                        <button class="card-expand">View Full</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-animate>Services</span>
+                <h2 class="section-title" data-animate>What I Offer</h2>
+                <p class="section-subtitle" data-animate>Comprehensive UI solutions for your Roblox game</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-animate>
+                    <div class="service-icon">🎨</div>
+                    <h3>UI Frame Design</h3>
+                    <p>Custom frames, buttons, and components designed to match your game's style perfectly.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">📱</div>
+                    <h3>Full Menu Systems</h3>
+                    <p>Complete menu interfaces including main menus, settings, inventory, and more.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">🎮</div>
+                    <h3>HUD Design</h3>
+                    <p>In-game heads-up displays that are informative without being intrusive.</p>
+                </div>
+                <div class="service-card" data-animate>
+                    <div class="service-icon">✨</div>
+                    <h3>Icons & Assets</h3>
+                    <p>Custom icons, thumbnails, and visual assets that complete your UI package.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESS ==================== -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-animate>Process</span>
+                <h2 class="section-title" data-animate>How It Works</h2>
+                <p class="section-subtitle" data-animate>Simple steps from contact to delivery</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step" data-animate>
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Contact & Brief</h3>
+                        <p>Reach out via Discord or Roblox. Share your game details, references, and what you need.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Quote & Payment</h3>
+                        <p>I'll provide a fair quote based on complexity. 50% upfront, 50% on delivery.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Design & Revisions</h3>
+                        <p>I create your UI and send previews. Request changes until you're happy.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Delivery</h3>
+                        <p>Receive your final files. Full resolution, organized, ready to implement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING ==================== -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-animate>Pricing</span>
+                <h2 class="section-title" data-animate>Simple Pricing</h2>
+                <p class="section-subtitle" data-animate>Transparent rates, no hidden fees</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-animate>
+                    <div class="pricing-header">
+                        <div class="pricing-icon">💎</div>
+                        <h3>Robux</h3>
+                        <p>Pay through Roblox</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="price">1K - 3K</span>
+                        <span class="period">R$ per frame</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Custom UI Design
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Source Files
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            1 Revision
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            24-48h Delivery
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary btn-block">Get Started</a>
+                </div>
+                
+                <div class="pricing-card featured" data-animate>
+                    <div class="pricing-badge">RECOMMENDED</div>
+                    <div class="pricing-header">
+                        <div class="pricing-icon">💳</div>
+                        <h3>PayPal</h3>
+                        <p>Secure payment</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="price">$10 - $30</span>
+                        <span class="period">USD per frame</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Custom UI Design
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Source Files
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            2 Revisions
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Priority Support
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            Faster Delivery
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+                </div>
+            </div>
+            
+            <p class="pricing-note" data-animate>* Prices vary based on complexity. Contact me for exact quotes on larger projects.</p>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-animate>Reviews</span>
+                <h2 class="section-title" data-animate>Client Feedback</h2>
+                <p class="section-subtitle" data-animate>Real reviews from real clients</p>
+            </div>
+            
+            <!-- Login Prompt -->
+            <div class="testimonial-prompt" id="testimonialPrompt" data-animate>
+                <div class="prompt-content">
+                    <p>Worked with me? Sign in to leave a review.</p>
+                    <button class="btn btn-primary" id="loginBtnReview">
+                        <svg viewBox="0 0 24 24" width="18" height="18">
+                            <path fill="currentColor" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="currentColor" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="currentColor" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="currentColor" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+
+            <!-- Review Form -->
+            <div class="testimonial-form" id="testimonialForm" data-animate>
+                <h3>Leave a Review</h3>
+                <div class="form-row">
+                    <div class="star-rating" id="starRating">
+                        <button data-rating="1" aria-label="1 star">★</button>
+                        <button data-rating="2" aria-label="2 stars">★</button>
+                        <button data-rating="3" aria-label="3 stars">★</button>
+                        <button data-rating="4" aria-label="4 stars">★</button>
+                        <button data-rating="5" aria-label="5 stars">★</button>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <textarea id="reviewText" placeholder="Share your experience working with me..." rows="4" maxlength="500"></textarea>
+                </div>
+                <button class="btn btn-primary" id="submitReview">Submit Review</button>
+            </div>
+
+            <!-- Reviews Grid -->
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <div class="no-reviews" id="noReviews">
+                    <p>No reviews yet. Be the first to leave one!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-animate>FAQ</span>
+                <h2 class="section-title" data-animate>Common Questions</h2>
+                <p class="section-subtitle" data-animate>Quick answers to help you decide</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>How long does a project take?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most single frames are delivered within 24-48 hours. Larger projects (full menu systems) may take 3-5 days depending on complexity.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>What files do I receive?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You get high-resolution PNG files ready for Roblox, plus the source file (PSD/Figma) so you can make small edits yourself if needed.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>Do you do revisions?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Robux payments include 1 free revision. PayPal includes 2. Additional revisions can be arranged for a small fee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>Can you implement the UI in-game?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I focus on design only. Implementation/scripting is separate. However, I can recommend scripters if you need one.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>What's your refund policy?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>If I haven't started work, full refund. Once work begins, no refunds — but I'll work with you until you're satisfied.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate>
+                    <button class="faq-question">
+                        <span>Do you take bulk orders?</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! For larger projects or multiple frames, I offer discounted rates. Contact me for a custom quote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" data-animate>Contact</span>
+                <h2 class="section-title" data-animate>Let's Work Together</h2>
+                <p class="section-subtitle" data-animate>Choose your preferred way to reach me</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Roblox -->
+                <a href="https://www.roblox.com/users/profile?username=THEKING_1139" target="_blank" rel="noopener" class="contact-card" data-animate>
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5.164 0L.16 18.928 18.836 24l5.004-18.928L5.164 0zm9.086 14.078l-4.235-1.12 1.12-4.235 4.235 1.12-1.12 4.235z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Roblox</h3>
+                        <p>THEKING_1139</p>
+                    </div>
+                    <span class="contact-action">Open Profile →</span>
+                </a>
+                
+                <!-- Discord -->
+                <a href="https://discord.com/users/theking_1139_48793" target="_blank" rel="noopener" class="contact-card" data-animate>
+                    <div class="contact-icon discord">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Discord</h3>
+                        <p>theking_1139_48793</p>
+                    </div>
+                    <span class="contact-action">Add Me →</span>
+                </a>
+                
+                <!-- Email -->
+                <a href="mailto:shrinivasdhangar62@gmail.com" class="contact-card" data-animate>
+                    <div class="contact-icon email">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>shrinivasdhangar62@gmail.com</p>
+                    </div>
+                    <span class="contact-action">Send Email →</span>
+                </a>
+                
+                <!-- PayPal -->
+                <a href="https://paypal.me/dhangarvenkatesh52" target="_blank" rel="noopener" class="contact-card" data-animate>
+                    <div class="contact-icon paypal">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797H9.048a.766.766 0 0 0-.757.645l-1.215 7.36zm13.787-14.78c-.116.598-.256 1.163-.425 1.694-1.297 4.088-4.563 5.478-8.123 5.478H9.93a.766.766 0 0 0-.757.645l-1.525 9.255a.641.641 0 0 0 .633.74h4.328a.766.766 0 0 0 .757-.644l.63-3.825a.766.766 0 0 1 .757-.645h1.588c3.76 0 6.705-1.528 7.57-5.946.36-1.847.174-3.389-.715-4.478a3.94 3.94 0 0 0-.758-.724z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <h3>PayPal</h3>
+                        <p>dhangarvenkatesh52@gmail.com</p>
+                    </div>
+                    <span class="contact-action">Open PayPal →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">THEKING</span>
+                    <p>Premium Roblox UI Design</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#portfolio">Work</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 THEKING_1139. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- ==================== IMAGE MODAL ==================== -->
+    <div class="modal-overlay" id="imageModal">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+        <img src="" alt="Portfolio preview" id="modalImage">
+    </div>
+
+    <!-- ==================== TOAST ==================== -->
+    <div class="toast" id="toast" role="alert">
+        <span id="toastMessage"></span>
+    </div>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    
+    <!-- App Script -->
+    <script src="js/app.js"></script>
+</body>
+</html>
